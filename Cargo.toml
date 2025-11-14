@@ -1,0 +1,9 @@
+[package]
+name = "ssh-key-gen-ed25519"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+ssh-key = { version = "0.6", features = ["ed25519", "rand_core"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
